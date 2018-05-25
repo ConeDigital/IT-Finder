@@ -77,7 +77,7 @@
 						</div>
 						<div class="col-sm-4 col-xs-8 p0 google_drive_content">
 							<h3><?php echo $content_post->post_title;?></h3>
-							<p>Total Score</p>
+							<p>Omdöme</p>
 							<div class="rateyo"></div>
 						</div>
 						<?php 
@@ -88,11 +88,13 @@
 						?>
 						<div class="col-sm-1">
 						</div>
-						<div class="col-sm-2 crm_rating_btn trail_btn_mob ">
-							<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon pull-right btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">I want free trial</a>
-						</div>
-						<div class="col-sm-2 crm_rating_btn new_buttons_request">
-							<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">request contact</a>
+						<div class="cd-single-product-buttons">
+							<div class="col-sm-2 crm_rating_btn trail_btn_mob ">
+								<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon pull-right btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa en gratisperiod</a>
+							</div>
+							<div class="col-sm-2 crm_rating_btn new_buttons_request">
+								<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -201,26 +203,26 @@
 				<div class="col-md-4 col-sm-6 rating_review_star p0">
 					<div class="col-sm-12 rating_mobile_display p0">
 						<div class="col-sm-4 col-xs-7">
-							<h4>Reading</h4>
+							<h4>Helhetsintryck</h4>
 						</div>
 						<div class="col-sm-8 col-xs-5">
-						<div  class="reading11" style="float: right;margin-right: 47px;"></div>
+						<div  class="reading11" style="float: right;margin-right: 0;"></div>
 						</div>
 					</div>
 					<div class="col-sm-12 rating_mobile_display p0">
 						<div class="col-sm-4 col-xs-7">
-							<h4>Writing</h4>
+							<h4>Användarvänlighet</h4>
 						</div>
 						<div class="col-sm-8 col-xs-5">
-							<div class="writing22" style="float: right;margin-right: 47px;"></div>
+							<div class="writing22" style="float: right;margin-right: 0;"></div>
 						</div>
 					</div>
 					<div class="col-sm-12 rating_mobile_display p0">
 						<div class="col-sm-4 col-xs-7">
-							<h4>Skill</h4>
+							<h4>Funktionalitet</h4>
 						</div>
 						<div class="col-sm-8 col-xs-5">
-							<div class="skills33" style="float: right;margin-right: 47px;"></div>
+							<div class="skills33" style="float: right;margin-right: 0;"></div>
 						</div>
 					</div>
 					<div class="col-sm-12 rating_mobile_display p0">
@@ -228,7 +230,7 @@
 							<h4>Support</h4>
 						</div>
 						<div class="col-sm-8 col-xs-5">
-							<div class="support44	" style="float: right;margin-right: 47px;"></div>
+							<div class="support44	" style="float: right;margin-right: 0;"></div>
 						</div>
 					</div>
 					
@@ -236,10 +238,10 @@
 					
 					<div class="col-sm-12 rating_mobile_display p0 total_rating_star">
 						<div class="col-sm-4 col-xs-7">
-							<h4>Total</h4>
+							<h4>Totalt</h4>
 						</div>
 						<div class="col-sm-8 col-xs-5">
-							<div class="rateyo" style="float: right;margin-right: 47px;"></div>
+							<div class="rateyo" style="float: right;margin-right: 0;"></div>
 						</div>
 						
 					</div>
@@ -261,12 +263,12 @@
 <div class="container p0">
 				
 				<div class="col-sm-12 p0 google_drive_rating_box">
-					<h3>Here! you can leave a review.</h3>
+					<h3>Här kan du lämna ett omdöme.</h3>
 					<form id="reviews_form" method="post" action="<?php echo get_site_url(); ?>/review_submit/">
 						<div class="col-sm-6 rating_review_star p0">
 							<div class="col-sm-12 rating_mobile_display p0">
 								<div class="col-sm-6 col-xs-5">
-									<h4>Reading</h4>
+									<h4>Helhetsintryck</h4>
 								</div>
 								<div class="col-sm-6 col-xs-7">
 									<div id="reading" class="rateyo reading" style="float: right;margin-right: 47px;"></div>
@@ -275,7 +277,7 @@
 							</div>
 							<div class="col-sm-12 rating_mobile_display p0">
 								<div class="col-sm-4 col-xs-5">
-									<h4>Writing</h4>
+									<h4>Användarvänlighet</h4>
 								</div>
 								<div class="col-sm-8 col-xs-7">
 									<div id="writing" class="rateyo writing" style="float: right;margin-right: 47px;"></div>
@@ -288,7 +290,7 @@
 						<div class="col-sm-6 rating_review_star p0">
 							<div class="col-sm-12 rating_mobile_display p0">
 								<div class="col-sm-4 col-xs-5">
-									<h4>Skill</h4>
+									<h4>Funktionalitet</h4>
 								</div>
 								<div class="col-sm-8 col-xs-7">
 									<div id="skills" class="rateyo skills" style="float: right;margin-right: 47px;"></div>
@@ -317,18 +319,18 @@
 								</div>
 								<div class="col-sm-6 form_input_align" style="text-align:left;">
 									<div class="form-group">
-	    								<label for="name">Name: <span style="color:red; font-size: 15px;">*</span></label>
+	    								<label for="name">Namn: <span style="color:red; font-size: 15px;">*</span></label>
 
 										<input id="name" style="" class="form-control reviews-data" type="text" name="name1" value="<?php echo ($current_user->display_name)?: ''  ?>" required>
 									</div>
 									<div class="form-group">
-	    								<label for="email">Email Address: <span style="color:red; font-size: 15px;">*</span></label>
+	    								<label for="email">Email: <span style="color:red; font-size: 15px;">*</span></label>
 
 										<input id="email"  class="form-control reviews-data" type="email" name="email1" value="<?php echo ($current_user->user_email)?: ''  ?>" required>
 
 									</div>									
 									<div class="form-group">
-	    								<label for="email">Company Name: <span style="color:red; font-size: 15px;">*</span></label>
+	    								<label for="email">Företagsnamn: <span style="color:red; font-size: 15px;">*</span></label>
 										<input id="company" type="text" class="form-control reviews-data" name="company" value="<?php echo ($array_data[0]->companyName)?: ''  ?>" required>
 									</div>
 								</div>
@@ -347,7 +349,7 @@
 						
 						//if(empty($array_data2) && empty($array_data)){
 						?>
-					    <Button id="submit_review" class="btn btn-primary" style="background-color: #480b76; " name="request" type="submit" class="" >Submit</Button>
+					    <Button id="submit_review" class="btn btn-primary" style="background-color: #480b76; " name="request" type="submit" class="" >Skicka</Button>
 					    <?php //} ?>
 					   
 					</form>
@@ -359,7 +361,7 @@
 
 		<div class="container p0">
 				<div class="col-sm-12 p0 google_drive_rating_box">
-					<h3>Customer Reviews</h3>	
+					<h3>Kund Omdömen</h3>
 						<div class="col-sm-12 rating_review_star p0">
 							<?php 
 
@@ -367,7 +369,7 @@
 								$reviews_count = count($reviews);
 
 								if($reviews_count == 0 ){
-									echo "<h5>No Customer Reviews Yet!</h5></br>";
+									echo "<h5>Det finns inga omdömen ännu!</h5></br>";
 								}
 
 								$value = 5;
@@ -383,21 +385,21 @@
 								
 								<br>
 								<div class="col-sm-4">
-									<p><strong>Name:</strong> <?php echo ($review->name)?:'No Name'; ?></p>
-									<p><strong>Company Name: </strong><?php echo ($review->companyName)?:'No Company'; ?></p>
-									<p><strong>Email Address: </strong><?php echo ($review->email)?:'No Address'; ?></p>
+									<p><strong>Namn:</strong> <?php echo ($review->name)?:'No Name'; ?></p>
+									<p><strong>Företagsnamn: </strong><?php echo ($review->companyName)?:'No Company'; ?></p>
+									<p><strong>Email: </strong><?php echo ($review->email)?:'No Address'; ?></p>
 								</div>
 								<div class="col-sm-4 " >
 								<br>
-									Reading<div id="reading_review_<?php echo $key; ?>" class="review1 reading_review" style="float: right;margin-right: 140px;"></div>
+									Helhetsintryck<div id="reading_review_<?php echo $key; ?>" class="review1 reading_review" style="float: right;margin-right: 100px;"></div>
 									<br><br>
-									Writing<div id="writing_review_<?php echo $key; ?>" class="review1 writing_review" style="float: right;margin-right: 140px;"></div>
+									Användarvänlighet<div id="writing_review_<?php echo $key; ?>" class="review1 writing_review" style="float: right;margin-right: 100px;"></div>
 								</div>
 								<div class="col-sm-4" >
 								<br>
-									Skills<div id="skills_review_<?php echo $key; ?>" class="review1 skills_review" style="float: right;margin-right: 140px;"></div>
+									Funktionalitet<div id="skills_review_<?php echo $key; ?>" class="review1 skills_review" style="float: right;margin-right: 100px;"></div>
 									<br><br>
-									Support<div id="support_review_<?php echo $key; ?>" class="review1 support_review" style="float: right;margin-right: 140px;"></div>
+									Support<div id="support_review_<?php echo $key; ?>" class="review1 support_review" style="float: right;margin-right: 100px;"></div>
 									</div>
 							</div>
 							<hr class="<?php echo $value; ?>" style="display: <?php echo ($key > 4)? 'none':''; ?>" >
@@ -441,7 +443,7 @@
 
 							</div>
 				<?php if($reviews_count > 5){ ?>
-				<a href="" id="load-more" class="btn btn-primary" style="background-color: #480b76; padding: 7px 25px 7px 25px ; color:white;" >Load More ..</a>
+				<a href="" id="load-more" class="btn btn-primary" style="background-color: #480b76; padding: 7px 25px 7px 25px ; color:white;" >Ladda fler ..</a>
 				<br><br>
 				<?php } ?>
 				</div>
@@ -464,27 +466,27 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Contact Request</h3>
-        <h6>IT FINDER may contact you regarding your request</h6>
+        <h3>Kontaktförfrågan</h3>
+        <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
       <form id="request_form" method="post" action="<?php echo get_site_url(); ?>/request-submit">
       	  <div class="row">
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="name" style="float: left;">Name <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="name" style="float: left;">Namn <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="name1" class="form-control" style="border-radius:0px" id="contact_name" required>
 				    </div>
       	  		</div>
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="company" style="float: left">Company <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="company" style="float: left">Företag <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="company" class="form-control" style="border-radius:0px" id="contact_company" required>
 				    </div>
       	  		</div>
 				<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="phone" style="float: left">Phone <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="phone" style="float: left">Telefon <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="phone" class="form-control" style="border-radius:0px" id="contact_phone" required>
 				    </div>
       	  		</div>
@@ -502,7 +504,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" id="submit_request" class="btn btn-primary btn-block" style="background-color: #480b76">Submit</button>
+        <button type="button" id="submit_request" class="btn btn-primary btn-block" style="background-color: #480b76">Skicka</button>
       </div>
     </div>
 
@@ -519,27 +521,27 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Trail Request</h3>
-        <h6>IT FINDER may contact you regarding your <table></table>trail request</h6>
+        <h3>Testa en gratisperiod</h3>
+        <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
       <form id="trail_form" method="post" action="<?php echo get_site_url(); ?>/trail-submit">
       	  <div class="row">
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="name" style="float: left;">Name <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="name" style="float: left;">Namn <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="name1" class="form-control" style="border-radius:0px" id="trail_name" required>
 				    </div>
       	  		</div>
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="company" style="float: left">Company <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="company" style="float: left">Företag <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="company" class="form-control" style="border-radius:0px" id="trail_company" required>
 				    </div>
       	  		</div>
 				<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="phone" style="float: left">Phone <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="phone" style="float: left">Telefon <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="phone" class="form-control" style="border-radius:0px" id="trail_phone" required>
 				    </div>
       	  		</div>
@@ -557,7 +559,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" id="trail_request" class="btn btn-primary btn-block" style="background-color: #480b76">Submit</button>
+        <button type="button" id="trail_request" class="btn btn-primary btn-block" style="background-color: #480b76">Skicka</button>
       </div>
     </div>
 
@@ -701,7 +703,7 @@ $(document).ready(function(){
 		$( "#load-more" ).click(function(e) {
 		 if(show_reviews > count_reviews){
 		  	$("#load-more").attr('disabled', true);
-		  	$("#load-more").html('No more to load');
+		  	$("#load-more").html('Inget mer att ladda');
 		 }
 
 		  e.preventDefault();

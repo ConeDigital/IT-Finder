@@ -586,7 +586,7 @@ footer .scroll-to-top a:hover, footer .scroll-to-top a:focus, footer .scroll-to-
     text-align: left;
 	padding-left:0px !important;
 }
-.footer-copyright a { color: #fff; border: 0; font-size:16px; text-transform:uppercase; color:#5c5c5c; margin-right:20px;}
+.footer-copyright a { color: #fff; border: 0; font-size:16px; text-transform:normal; color:#5c5c5c; margin-right:20px;}
 .footer-copyright a:hover, .footer-copyright a:focus { color: #5c5c5c; border-bottom: 1px dotted #fff; }
 
 .footer-social a { margin: 0 8px; font-size: 39px; color: #5c5c5c; }
@@ -1273,6 +1273,7 @@ margin-left:100px;
     border-radius: 5px;
     font-size: 20px;
 	border:1px solid #480B76;
+	width: max-content;
 }
 
 .crm_rating_btn a:hover{
@@ -1325,7 +1326,7 @@ margin-left:100px;
 }
 
 .rating_review_star h4{
-	text-transform:uppercase;
+	text-transform:none;
 	color:#480B76;
 	text-align:left;
 	font-weight:600;
@@ -1782,7 +1783,7 @@ float:left !important;
 	{
 		height:83px !important;
 	}
-	
+
 	
 }
 
@@ -1849,7 +1850,133 @@ text-align: justify;
 }
 
 
+/*CONE DIGITAL ----------------------------------*/
+
+.cd-navbar{
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	padding: 0;
+}
+
+.cd-navbar .navbar-brand{
+	height: 50px;
+	background-size: contain;
+}
 
 
+.cd-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
+	width: 100%;
+}
 
- 
+.cd-header ul.navbar-nav li a{
+	color: #000;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: none;
+}
+
+.cd-header ul.navbar-nav{
+	padding: 0;
+}
+
+.cd-header ul.navbar-nav li .btn_contact{
+	background: transparent;
+	color: #480b76 !important;
+	border: 2px solid #480b76;
+	border-radius: 0;
+	padding: 13px 40px !important;
+	margin-left: 15px;
+}
+
+.cd-header ul.navbar-nav li .btn_contact:hover{
+	color: white !important;
+}
+
+.cd-upper-header{
+	background: #480b76;
+	padding: 5px 0;
+}
+
+.cd-upper-header-content{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.cd-upper-header-content li{
+	color: white;
+	font-size: 12px;
+	list-style: none;
+	margin-left: 35px;
+	font-weight: 600;
+}
+
+.cd-upper-header-content a, .cd-upper-header-content p{
+	color: white;
+	font-size: 12px;
+	list-style: none;
+	font-weight: 600;
+	margin: 0;
+}
+
+
+.cd-mobile-menu .btn_contact{
+	margin-right: 15px;
+}
+
+.cd-header-container{
+	position: relative;
+}
+
+.cd-header .navbar-toggle{
+	position: absolute;
+	right: 15px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 34px;
+}
+
+.cd-single-product-buttons{
+	display: flex;
+	align-items: center;
+	width: max-content;
+	justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.cd-header{
+		padding: 10px 0;
+	}
+
+	.cd-navbar .navbar-brand{
+		height: 40px;
+	}
+
+	.cd-mobile-menu{
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background: white;
+		box-sizing: border-box;
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,.1);
+	}
+
+	.cd-single-product-buttons .crm_rating_btn a{
+		padding: 12px !important;
+	}
+
+	.cd-single-product-buttons .crm_rating_btn{
+		width: auto !important;
+	}
+}

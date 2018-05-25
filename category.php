@@ -302,7 +302,7 @@
 		<?php
 		if(!sizeof($posts_array_100))
 		{
-			echo '<h3>No Softwares found with the specified criteria...</h3>';
+			echo '<h3>Ingen IT-tjänst passade dina kriterier</h3>';
 		}
 		foreach ($posts_array_100 as $key => $post_array){
 			$obj_id = $post_array->object_id;
@@ -366,9 +366,9 @@
                                 
                             </div>
                             <div class="col-sm-6 crm_rubrik_detail">
-								<a class="neon neon-left" style="cursor: pointer;"  id="<?php echo $post_array->post_title ?>" target="blank">I want free trial</a>
+								<a class="neon neon-left" style="cursor: pointer;"  id="<?php echo $post_array->post_title ?>" target="blank">Testa en gratisperiod</a>
 						
-								<a class="neon neon-right" style="cursor: pointer;" id="<?php echo $post_array->post_title ?>" target="blank">request contact</a>
+								<a class="neon neon-right" style="cursor: pointer;" id="<?php echo $post_array->post_title ?>" target="blank">Kontakta</a>
 			
 						
 							</div>
@@ -376,7 +376,7 @@
                            
                             <div class="crm_rubrik_detail new_buttons_request">
                                 
-								<a style="padding:12px !important;background:#44aa44;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>">View Details</a>
+								<a style="padding:12px !important;background:#44aa44;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>">Läs mer</a>
 							</div>
                                 
 							</div>
@@ -384,7 +384,7 @@
 							</div>
 							<div class="col-sm-12 rubrik_content_para">
 								<div class="col-sm-2 rubrik_progress_score">
-								<h4>Total Rating</h4>
+								<h4>Omdöme</h4>
 								</div>
 								<div class="col-sm-4">
 
@@ -392,7 +392,7 @@
 								</div>								
 								<div class="clearfix"></div>
 								<div class="col-sm-2 rubrik_progress_score">
-								<h4>SCORE</h4>
+								<h4>Betyg</h4>
 								</div>
 								<?php 
 								$array = ["'".$selected_options_data_values[0]->first_start."-".$selected_options_data_values[0]->first_end."'", "'".$selected_options_data_values[0]->second_start."-".$selected_options_data_values[0]->second_end."'", "'".$selected_options_data_values[0]->third_start."-".$selected_options_data_values[0]->third_end."'", "'".$selected_options_data_values[0]->fourth_start."-".$selected_options_data_values[0]->fourth_end."'", "'".$selected_options_data_values[0]->fifth_start."-".$selected_options_data_values[0]->fifth_end."'"]; 
@@ -409,7 +409,7 @@
 								</div>
 								<div class="col-sm-1" style="padding-left: 0px">
 									
-							          <h4 class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-html="true" title="<?php echo 'Customers : '.$array[0].'<br> Users : '.$array[1].'<br> Revenue : '.$array[2].'<br> Facebook : '.$array[3].'<br> LinkedIn : '.$array[4]  ?>" data-placement="top" style="color:#2ba560"></h4>
+							          <h4 class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-html="true" title="<?php echo 'Kunder : '.$array[0].'<br> Användare : '.$array[1].'<br> Omsättning : '.$array[2].'<br> Facebook : '.$array[3].'<br> LinkedIn : '.$array[4]  ?>" data-placement="top" style="color:#2ba560"></h4>
 							        
 								</div>
 								<div class="clearfix"></div>
@@ -469,8 +469,8 @@ $paging_info = get_paging_info($count,$per_page,$page);
 <ul class="pagination">
     <!-- If the current page is more than 1, show the First and Previous links -->
     <?php if($paging_info['curr_page'] > 1) : ?>
-        <a href='?u=1<?php echo '&'.$conct_url; ?>' title='Page 1'>First</a>
-        <a href='?u=<?php echo ($paging_info['curr_page'] - 1) ?><?php echo '&'.$conct_url; ?>' title='Page <?php echo ($paging_info['curr_page'] - 1); ?>'>Prev</a>
+        <a href='?u=1<?php echo '&'.$conct_url; ?>' title='Page 1'>Första</a>
+        <a href='?u=<?php echo ($paging_info['curr_page'] - 1) ?><?php echo '&'.$conct_url; ?>' title='Page <?php echo ($paging_info['curr_page'] - 1); ?>'>Föregående</a>
     <?php endif; ?>
 
 
@@ -531,9 +531,9 @@ $paging_info = get_paging_info($count,$per_page,$page);
     <!-- Show last two pages if we're not near them -->
     <?php if($paging_info['curr_page'] < $paging_info['pages']) : ?>
 
-        <a href='?u=<?php echo ($paging_info['curr_page'] + 1);?><?php echo '&'.$conct_url; ?>' title='Page <?php echo ($paging_info['curr_page'] + 1); ?>'>Next</a>
+        <a href='?u=<?php echo ($paging_info['curr_page'] + 1);?><?php echo '&'.$conct_url; ?>' title='Page <?php echo ($paging_info['curr_page'] + 1); ?>'>Nästa</a>
 
-        <a href='?u=<?php echo $paging_info['pages']; ?><?php echo '&'.$conct_url; ?>' title='Page <?php echo $paging_info['pages']; ?>'>Last</a>
+        <a href='?u=<?php echo $paging_info['pages']; ?><?php echo '&'.$conct_url; ?>' title='Page <?php echo $paging_info['pages']; ?>'>Föregående</a>
 
     <?php endif; ?>
 </ul>
@@ -611,7 +611,7 @@ $paging_info = get_paging_info($count,$per_page,$page);
 					
 						<div class="col-sm-12 p0">
 							<div class="col-sm-12 crm_sidebar">
-								<h3>Filtration Parameters</h3>
+								<h3>Filtrering</h3>
 							</div>
 							<?php 
 							$options = $wpdb->get_results("SELECT * FROM wp_number_scales");
@@ -675,10 +675,10 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									</ul>
 									
 									<div class="clear10"></div>
-									<h5>Customers:</h5>
+									<h5>Kunder:</h5>
 									<select class="rating_select_option" id="customer" name="customer" style="width: 174px;">
 									
-									<option value="">Select Option</option>
+									<option value="">Välj alternativ</option>
 									
 									<?php foreach($options as $key => $option){ ?>
 										<?php if($_GET['customer'] == $key+1){ ?>
@@ -694,10 +694,10 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									</select>
 
 									<div class="clear10"></div>
-									<h5>Users:</h5>
+									<h5>Antal användare:</h5>
 									<select class="rating_select_option" id="users" name="users" style="width: 174px;">
 									
-									<option value="">Select Option</option>
+									<option value="">Välj alternativ</option>
 									
 									<?php foreach($options1 as $key => $option){ ?>
 										<?php if($_GET['users'] == $key+1){ ?>
@@ -709,10 +709,10 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									</select>
 
 									<div class="clear10"></div>
-									<h5>Revenue:</h5>
+									<h5>Omsättning:</h5>
 									<select class="rating_select_option" id="revenu" name="revenu" style="width: 174px;">
 									
-									<option value="">Select Option</option>
+									<option value="">Välj alternativ</option>
 									
 									<?php foreach($options2 as $key => $option){ ?>
 										<?php if($_GET['revenu'] == $key+1){ ?>
@@ -724,10 +724,10 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									</select>
 
 									<div class="clear10"></div>
-									<h5>Facebook Followers:</h5>									
+									<h5>Facebookföljare:</h5>
 									<select class="rating_select_option" id="facebook" name="facebook" style="width: 174px;">
 									
-									<option value="">Select Option</option>
+									<option value="">Välj alternativ</option>
 									
 									<?php foreach($options3 as $key => $option){ ?>
 										<?php if($_GET['facebook'] == $key+1){ ?>
@@ -739,10 +739,10 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									</select>
 
 									<div class="clear10"></div>
-									<h5>LinkedIn Followers:</h5>
+									<h5>LinkedInföljare:</h5>
 									<select class="rating_select_option" id="linkedin" name="linkedin" style="width: 174px;">
 									
-									<option value="">Select Option</option>
+									<option value="">Välj alternativ</option>
 									
 									<?php foreach($options4 as $key => $option){ ?>
 										<?php if($_GET['linkedin'] == $key+1){ ?>
@@ -753,8 +753,8 @@ $paging_info = get_paging_info($count,$per_page,$page);
 									<?php } ?>
 									</select>
 								</div>
-								<a href="<?= $clear_filter ?>" class="btn btn-primary" style="background:#480B76">Clear Filter</a>
-								<input class="btn btn-primary" type="submit" name="filter" value="Filter" name="filter" style="background:#480B76">
+								<a href="<?= $clear_filter ?>" class="btn btn-primary" style="background:#480B76">Rensa</a>
+								<input class="btn btn-primary" type="submit" name="filter" value="Filtrera" name="filter" style="background:#480B76">
 								<div class="clear10"></div>
 								<div class="clear10"></div>
 							</form>
@@ -814,27 +814,27 @@ $paging_info = get_paging_info($count,$per_page,$page);
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Contact Request</h3>
-        <h6>IT FINDER may contact you regarding your request</h6>
+        <h3>Kontaktförfrågan</h3>
+        <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
       <form id="request_form" method="post" action="<?php echo get_site_url(); ?>/request-submit">
       	  <div class="row">
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="name" style="float: left;">Name <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="name" style="float: left;">Namn <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="name1" class="form-control" style="border-radius:0px" id="contact_name" required>
 				    </div>
       	  		</div>
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="company" style="float: left">Company <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="company" style="float: left">Företag <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="company" class="form-control" style="border-radius:0px" id="contact_company" required>
 				    </div>
       	  		</div>
 				<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="phone" style="float: left">Phone <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="phone" style="float: left">Telefon <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="phone" class="form-control" style="border-radius:0px" id="contact_phone" required>
 				    </div>
       	  		</div>
@@ -852,7 +852,7 @@ $paging_info = get_paging_info($count,$per_page,$page);
 
       </div>
       <div class="modal-footer">
-        <button type="button" id="submit_request" class="btn btn-primary btn-block" style="background-color: #480b76">Submit</button>
+        <button type="button" id="submit_request" class="btn btn-primary btn-block" style="background-color: #480b76">Skicka</button>
       </div>
     </div>
 
@@ -869,27 +869,27 @@ $paging_info = get_paging_info($count,$per_page,$page);
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Trail Request</h3>
-        <h6>IT FINDER may contact you regarding your <table></table>trail request</h6>
+        <h3>Testa en gratisperiod</h3>
+        <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
       <form id="trail_form" method="post" action="<?php echo get_site_url(); ?>/trail-submit">
       	  <div class="row">
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="name" style="float: left;">Name <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="name" style="float: left;">Namn <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="name1" class="form-control" style="border-radius:0px" id="trail_name" required>
 				    </div>
       	  		</div>
       	  		<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="company" style="float: left">Company <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="company" style="float: left">Företag <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="company" class="form-control" style="border-radius:0px" id="trail_company" required>
 				    </div>
       	  		</div>
 				<div class="col-sm-6">
       	  			<div class="form-group">
-					    <label for="phone" style="float: left">Phone <span style="color:red; font-size: 15px;">*</span></label>
+					    <label for="phone" style="float: left">Telefon <span style="color:red; font-size: 15px;">*</span></label>
 					    <input type="text" name="phone" class="form-control" style="border-radius:0px" id="trail_phone" required>
 				    </div>
       	  		</div>
@@ -907,7 +907,7 @@ $paging_info = get_paging_info($count,$per_page,$page);
 
       </div>
       <div class="modal-footer">
-        <button type="button" id="trail_request" class="btn btn-primary btn-block" style="background-color: #480b76">Submit</button>
+        <button type="button" id="trail_request" class="btn btn-primary btn-block" style="background-color: #480b76">Skicka</button>
       </div>
     </div>
 
@@ -931,7 +931,7 @@ $(document).ready(function(e){
 
 $('.neon').on('click', function (e) {
 	var product_name = e.target.id;
-	if(e.target.text == 'I want Free trial')
+	if(e.target.text == 'Testa en gratisperiod')
 	{
 		$('#trailModal').modal('show');
 	}
@@ -958,8 +958,8 @@ $('.neon').on('click', function (e) {
 		else
 		{
 			swal({
-			   title: "Warning!",
-			   text: "Please! Fill all required fields",
+			   title: "Varning!",
+			   text: "Var god fyll i alla obligatoriska fält",
 			   icon: "warning",
 			 })
 		} 		
@@ -982,8 +982,8 @@ $('.neon').on('click', function (e) {
 		else
 		{
 			swal({
-			   title: "Warning!",
-			   text: "Please! Fill all required fields",
+				title: "Varning!",
+				text: "Var god fyll i alla obligatoriska fält",
 			   icon: "warning",
 			 })
 		} 
@@ -1103,7 +1103,7 @@ $('.neon').on('click', function (e) {
 $(document).ready(function(e){
 	swal({
 	   title: "Success!",
-	   text: "Thank You! for Submiting your Request.",
+	   text: "Tack för din förfrågan",
 	   icon: "success",
 	 }).then((willDelete) => {
           if (willDelete) {

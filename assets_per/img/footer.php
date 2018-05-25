@@ -34,10 +34,10 @@
 	            <div class="row">
 	            	
    	          <div class="col-sm-7 block-2-box block-2-right contact-address wow fadeInUp">
-	            		  <h3>Contact US</h3>
-	                  <p><span aria-hidden="true" class="icon_pin"></span>Affordable Luxury Travel, 40-42 Riding House Street, London W1W 7ES</p>
-                    <p><span aria-hidden="true" class="icon_phone"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/telephone_icon.png" width="35" height="31" alt=""> <strong>123 456 789 00</strong></p>
-                    <p><span aria-hidden="true" class="icon_mail"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/email_icon.png" width="44" height="29" alt=""> <a href="mailto:someone@example.com"><strong>hi@yourdomain.com</strong></a></p>
+                  <h3>Kontakta oss</h3>
+                  <p><span aria-hidden="true" class="icon_pin"></span>Affordable Luxury Travel, 40-42 Riding House Street, London W1W 7ES</p>
+                  <p><span aria-hidden="true" class="icon_phone"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/telephone_icon.png" width="35" height="31" alt=""> <strong>123 456 789 00</strong></p>
+                  <p><span aria-hidden="true" class="icon_mail"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/email_icon.png" width="44" height="29" alt=""> <a href="mailto:someone@example.com"><strong>hi@yourdomain.com</strong></a></p>
            	  </div>
             
             <div class="col-sm-5 block-2-box block-2-right contact-address wow fadeInUp">

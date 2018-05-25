@@ -37,7 +37,7 @@ get_header(); ?>
 					<div class="input-group-btn search-panel search_filter_tablet">
 					
 						<button type="button" class="btn btn-default dropdown-toggle search_filter" data-toggle="dropdown">
-							<span id="search_concept">Quick Search</span> <span class="caret"></span>
+							<span id="search_concept">Snabbsök</span> <span class="caret"></span>
 						</button>
 						
 
@@ -83,9 +83,9 @@ get_header(); ?>
 					</div>
 					<input type="hidden" name="u" value="1" id="uri">
 					<input type="hidden" name="search_category" value="all" id="search_param">
-					<input type="text" class="form-control search_input" name="search" id="search1"  placeholder="Search Your Software">
+					<input type="text" class="form-control search_input" name="search" id="search1"  placeholder="Sök efter IT-tjänst">
                 <span class="input-group-btn search_input_btn">
-                    <button id="search-btn" class="btn btn-default btn_search btn_search_filter" type="button">Search </span></button>
+                    <button id="search-btn" class="btn btn-default btn_search btn_search_filter" type="button">Sök </span></button>
 					</span>
 				</div>
 			</div>

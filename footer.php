@@ -35,17 +35,17 @@
 	            <div class="row">
 	            	
    	          <div class="col-sm-7 block-2-box block-2-right contact-address wow fadeInUp">
-	            		  <h3>Contact US</h3>
-	                  <p><span aria-hidden="true" class="icon_pin"></span>Affordable Luxury Travel, 40-42 Riding House Street, London W1W 7ES</p>
-                    <p><span aria-hidden="true" class="icon_phone"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/telephone_icon.png" width="35" height="31" alt=""> <strong>123 456 789 00</strong></p>
-                    <p><span aria-hidden="true" class="icon_mail"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/email_icon.png" width="44" height="29" alt=""> <a href="mailto:someone@example.com"><strong>hi@yourdomain.com</strong></a></p>
+                  <h3>Kontakta oss</h3>
+                  <p><span aria-hidden="true" class="icon_pin"></span>Reprovägen 12, 183 77 Täby Stockholm – Sverige</p>
+<!--                  <p><span aria-hidden="true" class="icon_phone"></span><img src="--><?//= get_template_directory_uri(); ?><!--/assets_per/img/telephone_icon.png" width="35" height="31" alt=""> <strong>123 456 789 00</strong></p>-->
+                  <p><span aria-hidden="true" class="icon_mail"></span><img src="<?= get_template_directory_uri(); ?>/assets_per/img/email_icon.png" width="44" height="29" alt=""> <a href="mailto:info@itfinder.se"><strong>info@itfinder.se</strong></a></p>
            	  </div>
             
             <div class="col-sm-5 block-2-box block-2-right contact-address wow fadeInUp">
                 <div id="mc_embed_signup" >
                    <form style="padding-left:0px; " action="https://foo.us17.list-manage.com/subscribe/post?u=8665d040200f627e13be6c585&amp;id=228cf471c4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div id="mc_embed_signup_scroll">
-                         <h3>Newsletters</h3>
+                         <h3>Nyhetsbrev</h3>
                          <div id="mce-responses" class="clear" style="margin:0px; padding:0px;">
                             <div class="response" id="mce-error-response" style="display:none; margin:0px; padding:0px;"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
@@ -58,7 +58,7 @@
                          
                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8665d040200f627e13be6c585_228cf471c4" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" class="btn btn-theme" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width:150px !important; margin:0px !important; display: inline; background: #480b76;
+                            <div class="clear"><input type="submit" class="btn btn-theme" value="Skicka" name="subscribe" id="mc-embedded-subscribe" class="button" style="width:150px !important; margin:0px !important; display: inline; background: #480b76;
                               border: 2px solid #480b76 !important;
                               border-top-left-radius: 0px !important;
                               border-bottom-left-radius: 0px !important;">
@@ -85,7 +85,7 @@
 	        	
 	            <div class="row">
                     <div class="col-sm-5 footer-copyright">
-                   	  <a href="<?php echo get_site_url(); ?>/om-oss">About Us</a>   <a href="<?php echo get_site_url(); ?>/review">Reviews </a> <a href="<?php echo get_site_url(); ?>/search-product?u=1">Software </a> <a href="<?php echo get_site_url(); ?>/information">Information</a>
+                   	  <a href="<?php echo get_site_url(); ?>/om-oss">Om oss</a>   <a href="<?php echo get_site_url(); ?>/review">Omdömen </a> <a href="<?php echo get_site_url(); ?>/search-product?u=1">It-Tjänster </a> <a href="<?php echo get_site_url(); ?>/information">Information</a>
                     </div>
 					
 					<div class="col-sm-3 block-3-box-icon1">	
