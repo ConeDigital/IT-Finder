@@ -93,7 +93,7 @@
 								<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon pull-right btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa en gratisperiod</a>
 							</div>
 							<div class="col-sm-2 crm_rating_btn new_buttons_request">
-								<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
+								<a class="neon" style="cursor: pointer; padding: 15px 20px 16px 20px !important;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
 							</div>
 						</div>
 					</div>
