@@ -88,13 +88,13 @@
                    	  <a href="<?php echo get_site_url(); ?>/om-oss">Om oss</a>   <a href="<?php echo get_site_url(); ?>/review">Omdömen </a> <a href="<?php echo get_site_url(); ?>/search-product?u=1">It-Tjänster </a> <a href="<?php echo get_site_url(); ?>/information">Information</a>
                     </div>
 					
-					<div class="col-sm-3 block-3-box-icon1">	
-						<img class="pull-left" src="<?php echo get_site_url(); ?>/wp-content/themes/twentyseventeen/assets_per/img/coom.png" alt="">
+					<div class="col-sm-3 block-3-box-icon1">
+<!--						<img class="pull-left" src="--><?php //echo get_site_url(); ?><!--/wp-content/themes/twentyseventeen/assets_per/img/coom.png" alt="">-->
 					</div>
 					
                     <div class="col-sm-4 footer-social">
-                    	Designed and developed by LEADconcept
-	                </div>
+                        <img style="width: 200px; margin: 19px 0;" src="<?= get_template_directory_uri(); ?>/assets_per/img/stockholms-handelskammare.png"
+                    </div>
 	            </div>
           </footer> 		 
     </div>

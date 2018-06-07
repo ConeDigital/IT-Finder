@@ -89,11 +89,11 @@
 						<div class="col-sm-1">
 						</div>
 						<div class="cd-single-product-buttons">
-							<div class="col-sm-2 crm_rating_btn trail_btn_mob ">
-								<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon pull-right btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa en gratisperiod</a>
+							<div class="">
+								<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa en gratisperiod</a>
 							</div>
-							<div class="col-sm-2 crm_rating_btn new_buttons_request">
-								<a class="neon" style="cursor: pointer; padding: 15px 20px 16px 20px !important;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
+							<div class="">
+								<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
 							</div>
 						</div>
 					</div>

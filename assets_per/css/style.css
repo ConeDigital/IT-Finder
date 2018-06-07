@@ -1950,8 +1950,17 @@ text-align: justify;
 	align-items: center;
 	width: max-content;
 	justify-content: center;
+	height: 80px;
 }
 
+
+.cd-single-product-buttons a{
+	padding: 14px 20px;
+	color: white;
+	background: #44aa44;
+	border-radius: 3px;
+	margin-left: 20px;
+}
 
 @media only screen and (max-width: 768px) {
 	.cd-header{
