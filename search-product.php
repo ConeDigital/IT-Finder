@@ -372,7 +372,7 @@
 							<a href="<?php echo get_site_url(); ?>/category_detail/<?php echo $data->ID; ?>"><h3><?php echo $data->post_title?></h3></a>
 						</div>
 						<div class="col-sm-6 crm_rubrik_detail">
-							<a style="padding:12px;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $data->ID; ?>" class="pull-right">Läs mer</a>
+							<a style="padding: 12px 25px; background: #ed833f; color: white; border-radius: 0; text-transform: uppercase; font-weight: bold;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $data->ID; ?>" class="pull-right">Läs mer</a>
 						</div>
                         
                         <div class="col-sm-12 crm_rubrik p0">
@@ -380,9 +380,8 @@
 								<!--<h3><?php //echo $post_array->post_title?></h3>-->
                                 <div class="clearfix"></div>
                                 <div class="crm_rubrik_detail new_buttons_request">
-                                <a class="neon" id="<?php echo $data->post_title ?>" style="cursor: pointer;">Testa en gratisperiod</a>
-						
-							<a class="neon" id="<?php echo $data->post_title ?>" style="cursor: pointer;" >Kontakta</a></div>
+                                	<a class="neon" id="<?php echo $data->post_title ?>" style="cursor: pointer; background: transparent; color: #ed833f; text-decoration: underline; padding: 0 !important; font-weight: bold; text-transform: uppercase">Testa gratis</a>
+									<a class="neon" id="<?php echo $data->post_title ?>" style="cursor: pointer; background: transparent; color: #470a76; text-decoration: underline; padding: 0 0 0 5px !important; font-weight: bold; text-transform: uppercase"" >Bli kontaktad</a></div>
                                 
 							</div>
                         </div>
@@ -438,7 +437,7 @@
 					        
 						</div>
 						<div class="clearfix"></div>
-						<p class="ttext"><?php echo $data->post_content?></p>
+<!--						<p class="ttext">--><?php //echo $data->post_content?><!--</p>-->
 					</div>
 			</div>
 			<div class="clear10"></div>
@@ -817,6 +816,8 @@ function get_paging_info($tot_rows,$pp,$curr_page)
       	  		<input type="hidden" name="p_id" value="<?php echo $redirect; ?>">
       	  		<input type="hidden" id="product" name="product" value="">    	  		
       	  </div>
+		  <input type="checkbox" id="accept-term-5" name="accept-term" required />
+		  <label for="accept-term-5">Jag godkänner IT-Finders <a href="#">villkor</a></label>
       </form>
 
 
@@ -839,7 +840,7 @@ function get_paging_info($tot_rows,$pp,$curr_page)
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Testa en gratisperiod</h3>
+        <h3>Testa gratis</h3>
         <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
@@ -872,6 +873,8 @@ function get_paging_info($tot_rows,$pp,$curr_page)
       	  		<input type="hidden" name="p_id" value="<?php echo $redirect; ?>">
       	  		<input type="hidden" id="product" name="product" value="">     	  		
       	  </div>
+		  <input type="checkbox" id="accept-term-6" name="accept-term" required />
+		  <label for="accept-term-6">Jag godkänner IT-Finders <a href="#">villkor</a></label>
       </form>
 
 
@@ -993,8 +996,10 @@ $('.neon').on('click', function (e) {
 		var company = $('#contact_company').val();
 		var phone   = $('#contact_phone').val();
 		var email   = $('#contact_email').val();
+	 	var check   = $('#accept-term-5').is(':checked') ? 1 : '';
 
-		if(name != '' && company != '' && phone != '' && email != '')
+
+	 if(name != '' && company != '' && phone != '' && email != ''  && check != '')
 		{
 			$('#request_form').submit();
 		}
@@ -1007,7 +1012,7 @@ $('.neon').on('click', function (e) {
 			 })
 		} 		
         
-    });
+ });
 
 
  $('#trail_request').on('click', function (e) {
@@ -1017,8 +1022,10 @@ $('.neon').on('click', function (e) {
 		var company = $('#trail_company').val();
 		var phone   = $('#trail_phone').val();
 		var email   = $('#trail_email').val();
+	 	var check   = $('#accept-term-6').is(':checked') ? 1 : '';
 
-		if(name != '' && company != '' && phone != '' && email != '')
+
+	 if(name != '' && company != '' && phone != '' && email != ''  && check != '')
 		{
 			$('#trail_form').submit();
 		}

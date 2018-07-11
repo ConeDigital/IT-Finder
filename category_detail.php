@@ -46,7 +46,7 @@
         <div class="block-3-container section-container what-we-do-container">
 	        <div class="container-fluid">
 	            <div class="row">
-					<div class="col-sm-12 crm_rating_header">
+					<div class="col-sm-12 cd-product-heading crm_rating_header">
 					<?php
 		 $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 		 $exploded_array=explode("/",$current_url);
@@ -89,12 +89,8 @@
 						<div class="col-sm-1">
 						</div>
 						<div class="cd-single-product-buttons">
-							<div class="">
-								<a style="background:#44aa44; cursor: pointer;" id="trial" class="neon btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa en gratisperiod</a>
-							</div>
-							<div class="">
-								<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">Kontakta</a>
-							</div>
+							<a style="background:#ed833f; cursor: pointer;" id="trial" class="neon btn-request"  data-toggle="modal" data-target="#trailModal" target="blank">Testa gratis</a>
+							<a class="neon" style="cursor: pointer;" data-toggle="modal" data-target="#requestModal" target="blank">Bli kontaktad</a>
 						</div>
 					</div>
 				</div>
@@ -105,25 +101,25 @@
 
 		
 		
-			<div class="col-sm-12 p0">
-				<div class="col-sm-8 rating_content_para" style="text-align:justify;">
-				<?php echo $content_post->post_content;?>
-					
-				</div>
-				<div class="col-sm-4 rating_content_img">
-					
-							<?php
-							 if(!isset($postThumb[0]) || empty($postThumb[0]))
-								 {
-								 echo '<img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/placeholder-image.png"/>';
-								 }
-								else
-								{?>
-									<img src="<?= $postThumb[0]?>">
-							<?php	}
-							 ?>
-				</div>
-			</div>
+<!--			<div class="col-sm-12 p0">-->
+<!--				<div class="col-sm-8 rating_content_para" style="text-align:justify;">-->
+<!--				--><?php //echo $content_post->post_content;?>
+<!--					-->
+<!--				</div>-->
+<!--				<div class="col-sm-4 rating_content_img">-->
+<!--					-->
+<!--							--><?php
+//							 if(!isset($postThumb[0]) || empty($postThumb[0]))
+//								 {
+//								 echo '<img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/placeholder-image.png"/>';
+//								 }
+//								else
+//								{?>
+<!--									<img src="--><?//= $postThumb[0]?><!--">-->
+<!--							--><?php	//}
+//							 ?>
+<!--				</div>-->
+<!--			</div>-->
 			
 			<div class="clear30"></div>
 
@@ -499,6 +495,8 @@
       	  		<input type="hidden" name="p_id" value="<?php echo $productID; ?>">
       	  		<input type="hidden" name="product" value="<?php echo $content_post->post_title;?>">     	  		
       	  </div>
+		  <input type="checkbox" id="accept-term-3" name="accept-term" required />
+		  <label for="accept-term-3">Jag godkänner IT-Finders <a href="#">villkor</a></label>
       </form>
 
 
@@ -521,7 +519,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/logo.png" style="width: 140px"/>
-        <h3>Testa en gratisperiod</h3>
+        <h3>Testa gratis</h3>
         <h6>IT Finder kan komma att kontakta dig angående din förfrågan</h6>
       </div>
       <div class="modal-body">
@@ -554,6 +552,8 @@
       	  		<input type="hidden" name="p_id" value="<?php echo $productID; ?>">
       	  		<input type="hidden" name="product" value="<?php echo $content_post->post_title;?>">     	  		
       	  </div>
+		  <input type="checkbox" id="accept-term-4" name="accept-term" required />
+		  <label for="accept-term-4">Jag godkänner IT-Finders <a href="#">villkor</a></label>
       </form>
 
 
@@ -900,8 +900,10 @@ $(document).ready(function(){
 		var company = $('#contact_company').val();
 		var phone   = $('#contact_phone').val();
 		var email   = $('#contact_email').val();
+	 	var check   = $('#accept-term-3').is(':checked') ? 1 : '';
 
-		if(name != '' && company != '' && phone != '' && email != '')
+
+	 if(name != '' && company != '' && phone != '' && email != ''  && check != '')
 		{
 			$('#request_form').submit();
 		}
@@ -923,8 +925,10 @@ $(document).ready(function(){
 		var company = $('#trail_company').val();
 		var phone   = $('#trail_phone').val();
 		var email   = $('#trail_email').val();
+	 	var check   = $('#accept-term-4').is(':checked') ? 1 : '';
 
-		if(name != '' && company != '' && phone != '' && email != '')
+
+	 if(name != '' && company != '' && phone != '' && email != ''  && check != '')
 		{
 			$('#trail_form').submit();
 		}

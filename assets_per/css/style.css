@@ -1945,21 +1945,50 @@ text-align: justify;
 	height: 34px;
 }
 
+.cd-product-heading{
+	border-top: none;
+	padding-bottom: 38px !important;
+	max-width: 1140px;
+	margin: 130px auto 0;
+	float: none;
+	background: none;
+}
+
 .cd-single-product-buttons{
 	display: flex;
-	align-items: center;
-	width: max-content;
+	align-items: flex-end;
 	justify-content: center;
-	height: 80px;
+	flex-direction: column;
 }
 
 
 .cd-single-product-buttons a{
 	padding: 14px 20px;
 	color: white;
-	background: #44aa44;
-	border-radius: 3px;
-	margin-left: 20px;
+	background: #470a76;
+	display: block;
+	border-radius: 0;
+	width: 250px;
+	margin: 7px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+.crm_rubrik_detail{
+	margin-top: 20px;
+}
+
+.cd-category-buttons{
+	display: block;
+	text-align: center;
+	max-width: 200px;
+	margin: 8px auto;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1987,5 +2016,21 @@ text-align: justify;
 
 	.cd-single-product-buttons .crm_rating_btn{
 		width: auto !important;
+	}
+
+	.cd-single-product-buttons a{
+		width: 48%;
+		margin: 22px auto 0 !important;
+	}
+
+	.cd-single-product-buttons{
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.cd-category-buttons{
+		margin: 8px 0;
 	}
 }
