@@ -1991,6 +1991,10 @@ text-align: justify;
 	border-radius: 0 !important;
 }
 
+.crm_rubrik h3{
+	color: #333333 !important;
+}
+
 @media only screen and (max-width: 768px) {
 	.cd-header{
 		padding: 10px 0;

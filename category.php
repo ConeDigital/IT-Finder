@@ -363,7 +363,7 @@
 								
 								<a href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>"><h3><?php echo $post_array->post_title?></h3></a>
 
-								<a style=" color: #480c77;text-decoration: underline; padding: 0; text-transform: uppercase; font-weight: bold;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>">Läs mer</a>
+								<a style="color: white; padding: 4px 10px; font-weight: bold; background: #2ba560; font-size: 12px;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>">Läs mer</a>
 							</div>
                             <div class="col-sm-6 crm_rubrik_detail">
 								<a class="neon neon-left cd-category-buttons" style="cursor: pointer; background: #ed833f"  id="<?php echo $post_array->post_title ?>" target="blank">Testa gratis</a>
