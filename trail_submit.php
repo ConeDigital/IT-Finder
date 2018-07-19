@@ -16,7 +16,7 @@
 			$p_id    = $_POST['p_id'];
 			$product    = $_POST['product'];  
 
-			$to = 'aimhassan878@gmail.com';
+			$to = 'andreas.varnava@itfinder.se';
 
 		    $subject = "Contact";
 

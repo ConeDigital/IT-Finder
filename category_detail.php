@@ -101,13 +101,13 @@
 
 		
 		
-<!--			<div class="col-sm-12 p0">-->
-<!--				<div class="col-sm-8 rating_content_para" style="text-align:justify;">-->
-<!--				--><?php //echo $content_post->post_content;?>
-<!--					-->
-<!--				</div>-->
+			<div class="col-sm-12 p0">
+				<div class="col-sm-12 rating_content_para" style="text-align:left;">
+				<?php echo $content_post->post_content;?>
+
+				</div>
 <!--				<div class="col-sm-4 rating_content_img">-->
-<!--					-->
+<!---->
 <!--							--><?php
 //							 if(!isset($postThumb[0]) || empty($postThumb[0]))
 //								 {
@@ -119,7 +119,7 @@
 <!--							--><?php	//}
 //							 ?>
 <!--				</div>-->
-<!--			</div>-->
+			</div>
 			
 			<div class="clear30"></div>
 
@@ -172,31 +172,31 @@
 		?>
 
 			<div class="col-sm-12 p0 google_drive_rating_box">
-				<div class="col-md-8 col-sm-6 drive_rating_box">
-					<div class="col-sm-12 p0">
-						<div class="col-sm-2 p0">
-							<!--<img src="<?//= $postThumb[0]?>">-->
-							
-							<?php
-							 if(!isset($postThumb[0]) || empty($postThumb[0]))
-								 {
-								 echo '<img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/placeholder-image.png"/>';
-								 }
-								else
-								{?>
-									<img src="<?= $postThumb[0]?>">
-							<?php	}
-							 ?>
-							
-						</div>
-						<div class="col-sm-10 col-xs-12 p0">
-							<h3><?php echo $content_post-> post_title;?></h3>
-						</div>
-					</div>
-					<div class="clear20"></div>
-					<?php echo $content_post-> post_content;?>
-				</div>
-				<div class="col-md-4 col-sm-6 rating_review_star p0">
+<!--				<div class="col-md-8 col-sm-6 drive_rating_box">-->
+<!--					<div class="col-sm-12 p0">-->
+<!--						<div class="col-sm-2 p0">-->
+<!--							<!--<img src="--><?////= $postThumb[0]?><!--">-->
+<!--							-->
+<!--							--><?php
+//							 if(!isset($postThumb[0]) || empty($postThumb[0]))
+//								 {
+//								 echo '<img src="http://it-finder.leadconcept.com/wp-content/themes/twentyseventeen/assets_per/img/placeholder-image.png"/>';
+//								 }
+//								else
+//								{?>
+<!--									<img src="--><?//= $postThumb[0]?><!--">-->
+<!--							--><?php	//}
+//							 ?>
+<!--							-->
+<!--						</div>-->
+<!--						<div class="col-sm-10 col-xs-12 p0">-->
+<!--							<h3>--><?php //echo $content_post-> post_title;?><!--</h3>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="clear20"></div>-->
+<!--					--><?php //echo $content_post-> post_content;?>
+<!--				</div>-->
+				<div class="col-md-12 rating_review_star p0">
 					<div class="col-sm-12 rating_mobile_display p0">
 						<div class="col-sm-4 col-xs-7">
 							<h4>Helhetsintryck</h4>
@@ -496,7 +496,7 @@
       	  		<input type="hidden" name="product" value="<?php echo $content_post->post_title;?>">     	  		
       	  </div>
 		  <input type="checkbox" id="accept-term-3" name="accept-term" required />
-		  <label for="accept-term-3">Jag godkänner IT-Finders <a href="#">villkor</a></label>
+		  <label for="accept-term-3">Jag godkänner IT-Finders <a target="_blank" href="<?php echo esc_url(home_url( '/villkor' ) ); ?>">villkor</a></label>
       </form>
 
 
@@ -553,7 +553,7 @@
       	  		<input type="hidden" name="product" value="<?php echo $content_post->post_title;?>">     	  		
       	  </div>
 		  <input type="checkbox" id="accept-term-4" name="accept-term" required />
-		  <label for="accept-term-4">Jag godkänner IT-Finders <a href="#">villkor</a></label>
+		  <label for="accept-term-4">Jag godkänner IT-Finders <a target="_blank" href="<?php echo esc_url(home_url( '/villkor' ) ); ?>">villkor</a></label>
       </form>
 
 

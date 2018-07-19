@@ -817,7 +817,7 @@ function get_paging_info($tot_rows,$pp,$curr_page)
       	  		<input type="hidden" id="product" name="product" value="">    	  		
       	  </div>
 		  <input type="checkbox" id="accept-term-5" name="accept-term" required />
-		  <label for="accept-term-5">Jag godkänner IT-Finders <a href="#">villkor</a></label>
+		  <label for="accept-term-5">Jag godkänner IT-Finders <a target="_blank" href="<?php echo esc_url(home_url( '/villkor' ) ); ?>">villkor</a></label>
       </form>
 
 
@@ -874,7 +874,7 @@ function get_paging_info($tot_rows,$pp,$curr_page)
       	  		<input type="hidden" id="product" name="product" value="">     	  		
       	  </div>
 		  <input type="checkbox" id="accept-term-6" name="accept-term" required />
-		  <label for="accept-term-6">Jag godkänner IT-Finders <a href="#">villkor</a></label>
+		  <label for="accept-term-6">Jag godkänner IT-Finders <a target="_blank" href="<?php echo esc_url(home_url( '/villkor' ) ); ?>">villkor</a></label>
       </form>
 
 

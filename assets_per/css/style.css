@@ -1994,6 +1994,14 @@ text-align: justify;
 	color: #333333 !important;
 }
 
+.page-title-text p{
+	text-align: left;
+}
+
+.section-container{
+	padding-bottom: 30px;
+}
+
 @media only screen and (max-width: 768px) {
 	.cd-header{
 		padding: 10px 0;
@@ -2023,6 +2031,7 @@ text-align: justify;
 
 	.cd-single-product-buttons a{
 		width: 48%;
+
 		margin: 22px auto 0 !important;
 	}
 
