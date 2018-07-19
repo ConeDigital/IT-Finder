@@ -32,7 +32,7 @@
 		
         <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets_per/css/animate.css">
 		
-        <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets_per/css/style.css">
+        <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets_per/css/style.css?ver=1.2">
 		
         <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets_per/css/media-queries.css">
 		
