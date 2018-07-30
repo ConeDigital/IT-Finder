@@ -26,7 +26,9 @@
 
 		    $con_message1 .= "Name : " . $name . "\n";
 
-		    $con_message1 .= "Email Address : " . $sender . "\n";
+			$con_message1 .= "Phone : " . $phone . "\n";
+
+			$con_message1 .= "Company : " . $company . "\n";
 
 		    $con_message1 .= "Message :" . $name . "is intrested to buy a product ". $product ." \n";
 

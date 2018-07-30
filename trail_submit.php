@@ -28,6 +28,10 @@
 
 		    $con_message1 .= "Email Address : " . $sender . "\n";
 
+			$con_message1 .= "Phone : " . $phone . "\n";
+
+			$con_message1 .= "Company : " . $company . "\n";
+
 		    $con_message1 .= "Message :" . $name . "is intrested to trail a product ". $product ." \n";
 
 		    $con_headers = 'From: ' . $name . ' < ' . $sender . ' > ' . "\r\n";
