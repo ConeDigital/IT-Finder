@@ -67,7 +67,7 @@
 				<h1 class="cat_name"><?php echo $term->name;?></h1>
 				
 				<!--<div class="clear50"></div>-->
-				<p><?php echo $term->description;?></p>
+				<p style="text-align: center;"><?php echo $term->description;?></p>
             </div>
         </div>
 
