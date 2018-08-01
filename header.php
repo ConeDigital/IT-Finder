@@ -66,7 +66,7 @@
 				// echo 'User email: ' . $current_user->user_email . '<br />';
 
 				?>
-				<li><span><i class="fa fa-phone" aria-hidden="true"></i></span> 404 915-5121</li>
+				<li><span><i class="fa fa-phone" aria-hidden="true"></i></span> 010-2520622</li>
 			</div>
 		</div>
     <div class="container cd-header-container">

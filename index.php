@@ -103,6 +103,7 @@ get_header(); ?>
 	</div>
 
 	<!-- What we do -->
+	<?php /*
 	<div class="block-3-container section-container what-we-do-container">
 		<div class="container">
 
@@ -146,18 +147,18 @@ get_header(); ?>
 				?>
 			</div>
 		</div>
-	</div>
+	</div>*/ ?>
 
 	<!-- Block 2 (team member) -->
 	<div class="block-2-container section-container section-container-gray about-block-2-container">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 fadeInLeft">
-					<h3 class="box_h3">Lorem Ipsum is simply dummy text </h3>
+					<h3 class="box_h3">Hitta rätt molntjänst för ditt företag</h3>
 					<div class="clear20"></div>
 					<p>
-
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+						Jämför och testa marknadsledande produkter, ta del av omdömen från andra företagare och hitta rätt lösning för din verksamhet
+						IT Finder finns till för att leda rätt köpare till rätt leverantör inom molntjänster och programvaror för företag
 					</p>
 
 
@@ -195,7 +196,7 @@ get_header(); ?>
 						<img src="<?= $imgscr2; ?>" alt="" >
 
 						<div class="label_box">
-							<?php echo $args->post_content;?>
+							<?php echo $args2->post_content;?>
 						</div>
 
 					</div>

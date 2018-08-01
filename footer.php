@@ -28,7 +28,7 @@
 						              <?php dynamic_sidebar('social_icons');?>
                     <div class="clearfix"></div>
                 	  <div class="divider-1 wow fadeInUp"><span></span></div>
-                        <?php dynamic_sidebar('it_finder'); ?>
+<!--                        --><?php //dynamic_sidebar('it_finder'); ?>
 	                </div>
 	            </div>
 

@@ -379,7 +379,7 @@
 							</div>
 							<div class="col-sm-12 rubrik_content_para">
 								<div class="col-sm-2 rubrik_progress_score">
-								<h4>Omdöme</h4>
+								<h4 style="font-size: 16px">Omdöme</h4>
 								</div>
 								<div class="col-sm-4">
 
@@ -387,7 +387,7 @@
 								</div>								
 								<div class="clearfix"></div>
 								<div class="col-sm-2 rubrik_progress_score">
-								<h4>Betyg</h4>
+								<h4 style="font-size: 16px">Marknadspoäng</h4>
 								</div>
 								<?php 
 								$array = ["'".$selected_options_data_values[0]->first_start."-".$selected_options_data_values[0]->first_end."'", "'".$selected_options_data_values[0]->second_start."-".$selected_options_data_values[0]->second_end."'", "'".$selected_options_data_values[0]->third_start."-".$selected_options_data_values[0]->third_end."'", "'".$selected_options_data_values[0]->fourth_start."-".$selected_options_data_values[0]->fourth_end."'", "'".$selected_options_data_values[0]->fifth_start."-".$selected_options_data_values[0]->fifth_end."'"]; 
