@@ -389,15 +389,15 @@
 								<div class="col-sm-2 rubrik_progress_score">
 								<h4 style="font-size: 16px">Marknadspoäng</h4>
 								</div>
-								<?php 
-								$array = ["'".$selected_options_data_values[0]->first_start."-".$selected_options_data_values[0]->first_end."'", "'".$selected_options_data_values[0]->second_start."-".$selected_options_data_values[0]->second_end."'", "'".$selected_options_data_values[0]->third_start."-".$selected_options_data_values[0]->third_end."'", "'".$selected_options_data_values[0]->fourth_start."-".$selected_options_data_values[0]->fourth_end."'", "'".$selected_options_data_values[0]->fifth_start."-".$selected_options_data_values[0]->fifth_end."'"]; 
+								<?php
+								$array = ["'".$selected_options_data_values[0]->first_start."-".$selected_options_data_values[0]->first_end."'", "'".$selected_options_data_values[0]->second_start."-".$selected_options_data_values[0]->second_end."'", "'".$selected_options_data_values[0]->third_start."-".$selected_options_data_values[0]->third_end."'", "'".$selected_options_data_values[0]->fourth_start."-".$selected_options_data_values[0]->fourth_end."'", "'".$selected_options_data_values[0]->fifth_start."-".$selected_options_data_values[0]->fifth_end."'"];
 								?>
 								<div class="col-sm-4" style="padding-right: 0px">
 									
 
 									<div class="progress rubrik_progress">
 										<div class="progress-bar progress-bar-rubrik" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($avg_score)? $avg_score*10: 20; ?>%">
-											<?php echo $avg_score; ?> / 10
+											<?php /* echo $avg_score; */ ?> - / 10
 										</div>
 									</div>
 									
