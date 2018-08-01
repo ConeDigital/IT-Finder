@@ -397,7 +397,7 @@
 
 									<div class="progress rubrik_progress">
 										<div class="progress-bar progress-bar-rubrik" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($avg_score)? $avg_score*10: 20; ?>%">
-											<?php /* echo $avg_score; */ ?> - / 10
+											<?php  echo $avg_score; ?> / 10
 										</div>
 									</div>
 									
