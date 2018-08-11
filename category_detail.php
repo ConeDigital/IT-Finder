@@ -75,17 +75,19 @@
 							 ?>
 							
 						</div>
-						<div class="col-sm-4 col-xs-8 p0 google_drive_content">
-							<h3><?php echo $content_post->post_title;?></h3>
-							<p>Omdöme</p>
-							<div class="rateyo"></div>
-						</div>
-						<?php 
+						<?php
 
 						$result = $wpdb->get_results("SELECT * FROM cta_links");
 						$link1 = $wpdb->get_results("SELECT * FROM wp_postmeta WHERE post_id = '$currentID' AND meta_key = 'cta_link1'");
 						$link2 = $wpdb->get_results("SELECT * FROM wp_postmeta WHERE post_id = '$currentID' AND meta_key = 'cta_link2'");
 						?>
+						<div class="col-sm-4 col-xs-8 p0 google_drive_content">
+							<h3><?php echo $content_post->post_title;?></h3>
+							<a style="text-decoration: underline; margin: 5px 0; display: block; font-size: 15px;" href="<?php echo $link2[0]->meta_value; ?>" target="_blank">Besök webbsida</a>
+							<p>Omdöme</p>
+							<div class="rateyo"></div>
+						</div>
+
 						<div class="col-sm-1">
 						</div>
 						<div class="cd-single-product-buttons">

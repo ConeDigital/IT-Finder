@@ -362,8 +362,8 @@
                             <div class="col-sm-6 crm_rubrik" style="padding-left:10px !important; text-align:left;">
 								
 								<a href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>"><h3><?php echo $post_array->post_title?></h3></a>
-
 								<a style="color: white; padding: 4px 10px; font-weight: bold; background: #2ba560; font-size: 12px;" href="<?php echo get_site_url(); ?>/category_detail/<?php echo $post_array->ID; ?>">Läs mer</a>
+								<a style="color: black; margin-left: 10px; text-decoration: underline;" target="_blank" href="<?php echo $link2[0]->meta_value; ?>">Besök webbsida</a>
 							</div>
                             <div class="col-sm-6 crm_rubrik_detail">
 								<a class="neon neon-left cd-category-buttons" style="cursor: pointer; background: #ed833f"  id="<?php echo $post_array->post_title ?>" target="blank">Testa gratis</a>
@@ -377,6 +377,7 @@
 							</div>
 						
 							</div>
+							<?php /*
 							<div class="col-sm-12 rubrik_content_para">
 								<div class="col-sm-2 rubrik_progress_score">
 								<h4 style="font-size: 16px">Omdöme</h4>
@@ -410,6 +411,7 @@
 								<div class="clearfix"></div>
 <!--								<p class="ttext">--><?php //echo $post_array->post_content?><!--</p>-->
 							</div>
+							*/?>
 						</div>
 						<div class="clear10"></div>
 						<script>
